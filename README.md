@@ -127,8 +127,7 @@ Users can download generated models in:
 
 **Description:** Landing section with title and input box.
 
-```
-<img width="1886" height="919" alt="home" src="https://github.com/user-attachments/assets/de286ecb-afc1-415c-a5df-8fe45ba7546f" />
+```![Homepage](./public/screenshots/home.png)
 
 
 ---
