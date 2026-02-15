@@ -1,0 +1,36 @@
+﻿npm : npm error code 
+ETARGET
+At line:1 char:1
++ npm install 2>&1 | 
+Out-File -Encoding 
+utf8 install_log.txt
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (npm err   
+ or code ETARGET:    
+String) [], Remo    
+teException
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+npm error notarget 
+No matching version 
+found for 
+@google/genai@^0.1.1.
+npm error notarget 
+In most cases you or 
+one of your 
+dependencies are 
+requesting
+npm error notarget a 
+package version that 
+doesn't exist.
+npm error A complete 
+log of this run can 
+be found in: C:\Users
+\ankit\AppData\Local\
+npm-cache\_logs\2026-
+02-14T16_55_15_561Z-d
+ebug-0.log

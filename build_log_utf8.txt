@@ -1,0 +1,6 @@
+﻿src/components/common/Button.tsx(2,10): error TS1484: 'LucideIcon' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/components/common/Button.tsx(22,9): error TS6133: 'baseStyles' is declared but its value is never read.
+src/components/common/Button.tsx(24,9): error TS6133: 'variants' is declared but its value is never read.
+src/components/common/Button.tsx(31,9): error TS6133: 'sizes' is declared but its value is never read.
+src/components/common/Button.tsx(41,9): error TS6133: 'variantClass' is declared but its value is never read.
+src/components/viewer/ModelViewer.tsx(9,59): error TS6133: 'modelUrl' is declared but its value is never read.

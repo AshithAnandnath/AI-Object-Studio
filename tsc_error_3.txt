@@ -1,0 +1,15 @@
+src/components/viewer/Viewer3D.tsx(4,32): error TS2307: Cannot find module '../types' or its corresponding type declarations.
+src/components/viewer/Viewer3D.tsx(118,60): error TS7006: Parameter 'part' implicitly has an 'any' type.
+src/components/viewer/Viewer3D.tsx(118,66): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/cv/objectDetection.ts(1,15): error TS2305: Module '"../generator/types"' has no exported member 'DetectedObject'.
+src/generator/exportModel.ts(2,43): error TS2307: Cannot find module '../types' or its corresponding type declarations.
+src/generator/exportModel.ts(26,25): error TS7006: Parameter 'part' implicitly has an 'any' type.
+src/generator/generateModel.ts(1,29): error TS1484: 'Schema' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/generator/generateModel.ts(2,26): error TS6133: 'ModelPart' is declared but its value is never read.
+src/generator/generateModel.ts(2,54): error TS2307: Cannot find module '../types' or its corresponding type declarations.
+src/generator/generateModel.ts(78,25): error TS7006: Parameter 'part' implicitly has an 'any' type.
+src/generator/generateModel.ts(128,45): error TS7006: Parameter 'part' implicitly has an 'any' type.
+src/generator/ShapeRenderer.tsx(3,38): error TS2307: Cannot find module '../types' or its corresponding type declarations.
+src/generator/ShapeRenderer.tsx(34,15): error TS6133: 'state' is declared but its value is never read.
+src/generator/types.ts(1,13): error TS1294: This syntax is not allowed when 'erasableSyntaxOnly' is enabled.
+src/pages/Home.tsx(7,1): error TS6133: 'ViewerControls' is declared but its value is never read.

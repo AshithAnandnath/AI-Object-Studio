@@ -1,0 +1,344 @@
+/* ===============================
+   GLOBAL RESET & SMOOTH SCROLL
+================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===============================
+   PAGE BACKGROUND
+================================= */
+
+.page {
+  min-height: 100vh;
+  padding-bottom: 80px;
+  transition: 0.4s ease;
+  background: linear-gradient(120deg, #0b1220, #0f1a33, #08101f);
+  background-size: 400% 400%;
+  animation: gradientShift 16s ease infinite;
+  color: #ffffff;
+}
+
+.page.dark {
+  background: linear-gradient(120deg, #0b1220, #0f1a33, #08101f);
+}
+
+.page:not(.dark) {
+  background: linear-gradient(120deg, #eef2ff, #ffffff, #e6ecff);
+  color: #111827;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ===============================
+   HEADER
+================================= */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.page:not(.dark) .header {
+  background: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+nav a {
+  margin: 0 16px;
+  text-decoration: none;
+  font-weight: 500;
+  color: inherit;
+  opacity: 0.8;
+  transition: 0.25s;
+}
+
+nav a:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+/* theme toggle */
+.theme-btn {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.theme-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.35);
+}
+
+/* ===============================
+   GLASS EFFECT
+================================= */
+
+.glass {
+  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+.page:not(.dark) .glass {
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ===============================
+   HERO SECTION
+================================= */
+
+.hero {
+  max-width: 900px;
+  margin: 80px auto 40px;
+  padding: 50px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  opacity: 0.8;
+  line-height: 1.6;
+  max-width: 720px;
+  margin: auto;
+}
+
+/* ===============================
+   PROMPT BOX
+================================= */
+
+.prompt-box {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.prompt-box input {
+  padding: 14px 18px;
+  width: 320px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+}
+
+.prompt-box button {
+  padding: 14px 22px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.prompt-box button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 22px rgba(99, 102, 241, 0.35);
+}
+
+/* loading shimmer */
+.loading-btn {
+  animation: shimmer 1.2s infinite linear;
+}
+
+@keyframes shimmer {
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/* ===============================
+   FEATURES GRID
+================================= */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+  max-width: 1100px;
+  margin: 60px auto;
+}
+
+.feature {
+  padding: 26px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-6px);
+}
+
+/* ===============================
+   SECTIONS
+================================= */
+
+.section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 36px;
+}
+
+.section h2 {
+  margin-bottom: 8px;
+}
+
+.detected {
+  margin-top: 16px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+/* ===============================
+   VIEWER
+================================= */
+
+.viewer-loading {
+  animation: shimmer 1.3s infinite;
+}
+
+/* ===============================
+   EXPORT BUTTONS
+================================= */
+
+.export-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.export-buttons button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  background: #0ea5e9;
+  color: white;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.export-buttons button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(14, 165, 233, 0.35);
+}
+
+/* ===============================
+   ABOUT SECTION
+================================= */
+
+.about {
+  max-width: 1100px;
+  margin: 60px auto;
+  display: grid;
+  gap: 24px;
+}
+
+.about-box {
+  padding: 26px;
+  transition: 0.3s ease;
+}
+
+.about-box:hover {
+  transform: translateY(-5px);
+}
+
+/* ===============================
+   FOOTER
+================================= */
+
+.footer {
+  text-align: center;
+  padding: 50px 20px 30px;
+  opacity: 0.75;
+  font-size: 14px;
+}
+
+/* ===============================
+   SCROLL REVEAL ANIMATION
+================================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.7s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .prompt-box {
+    flex-direction: column;
+  }
+
+  .prompt-box input {
+    width: 100%;
+  }
+
+}
