@@ -128,7 +128,7 @@ Users can download generated models in:
 **Description:** Landing section with title and input box.
 
 ```
-![Homepage](public/screenshots/home.png)
+![Homepage](./public/screenshots/home.png)
 
 ---
 
@@ -136,7 +136,7 @@ Users can download generated models in:
 
 **Description:** Upload interface with preview and detected label.
 
-![Detection](public/screenshots/detection.png)
+![Detection](./public/screenshots/detection.png)
 
 ---
 
@@ -144,7 +144,7 @@ Users can download generated models in:
 
 **Description:** Interactive 3D viewer displaying generated object.
 
-![Viewer](public/screenshots/viewer.png)
+![Viewer](./public/screenshots/viewer.png)
 
 ---
 
@@ -152,7 +152,7 @@ Users can download generated models in:
 
 **Description:** Feature cards and UI layout.
 
-![Features](public/screenshots/features.png)
+![Features](./public/screenshots/features.png)
 
 ---
 
@@ -160,7 +160,7 @@ Users can download generated models in:
 
 **Description:** OBJ & STL download buttons.
 
-![Export](public/screenshots/export.png)
+![Export](./public/screenshots/export.png)
 ---
 
 ## How to run this project
